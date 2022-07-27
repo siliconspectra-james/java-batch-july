@@ -1,28 +1,23 @@
-package com.ssi.entity;
+package com.ssi.vo;
+
+import com.ssi.entity.Department;
 
 import java.util.List;
 
-public class Employee {
-    private Integer id;
+public class EmployeeVO {
+
     private String name;
     private List<Department> departments;
     private Double salary;
 
-    public Employee() {}
+    public EmployeeVO() {
 
-    public Employee(Integer id, String name, List<Department> departments, Double salary) {
-        this.id = id;
+    }
+
+    public EmployeeVO(String name, List<Department> departments, Double salary) {
         this.name = name;
         this.departments = departments;
         this.salary = salary;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getName() {

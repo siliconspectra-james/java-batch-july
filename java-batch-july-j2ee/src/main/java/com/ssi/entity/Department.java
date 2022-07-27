@@ -4,6 +4,8 @@ public class Department {
     private Integer departmentId;
     private String departmentName;
 
+    public Department() {}
+
     public Department(Integer departmentId, String departmentName) {
         this.departmentId = departmentId;
         this.departmentName = departmentName;
